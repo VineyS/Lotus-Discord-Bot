@@ -1,14 +1,7 @@
 import discord
 from discord.ext import commands
 from discord.ext.commands import has_permissions, CheckFailure, MissingPermissions, MissingRequiredArgument
-import asyncio
-from PIL import Image
-from PIL import ImageFont
-from PIL import ImageDraw
-import datetime
-import time
 import sqlite3
-import requests
 class WelcomeCog(commands.Cog, name="Welcome"):
     def __init__(self, bot):
         self.bot=bot
@@ -60,8 +53,6 @@ class WelcomeCog(commands.Cog, name="Welcome"):
             await ctx.send(f"`welcome channel <TextChannel> ??? TextChannel is missing`")
         elif isinstance(error, MissingPermissions):
             await ctx.send(f"You need the following permissions for that command to work: `Manage Sever`")
-#        elif isinstance(error, MissingAccess):
-#            await ctx.send(f"I dont have permissions to send on that channel")
 
     @welcome.command()
     async def text(self, ctx, *, text):
@@ -111,10 +102,7 @@ class WelcomeCog(commands.Cog, name="Welcome"):
     async def wecancel(self, ctx,error):
         if isinstance(error, MissingPermissions):
             await ctx.send(f"You need the following permissions for that command to work: `Manage Sever`")
-            
 
-#        elif isinstance(error, MissingAccess):
-#            await ctx.send(f"I dont have permissions to send on that channel")
 def setup(bot):
     bot.add_cog(WelcomeCog(bot))
     print("Loaded Welcome Successfully")
