@@ -1,4 +1,4 @@
-[![CodeFactor](https://www.codefactor.io/repository/github/vineypsunu/lotusbot-discordbot-python/badge/master)](https://www.codefactor.io/repository/github/vineypsunu/lotusbot-discordbot-python/overview/master)
+[![CodeFactor](https://www.codefactor.io/repository/github/vineys/lotusbot-discordbot-python/badge)](https://www.codefactor.io/repository/github/vineys/lotusbot-discordbot-python)
 # LotusBot-DiscordBot-Python
 ---
 
