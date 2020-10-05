@@ -1,0 +1,6 @@
+discord
+asyncio
+apscheduler
+psutil
+urbandict
+googletrans
