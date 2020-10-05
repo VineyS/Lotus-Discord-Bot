@@ -2,9 +2,9 @@ import discord
 from discord.ext import commands
 from discord.ext.commands import has_permissions, CheckFailure, MissingPermissions, MissingRequiredArgument
 import asyncio
-#from PIL import Image
-#from PIL import ImageFont
-#from PIL import ImageDraw
+from PIL import Image
+from PIL import ImageFont
+from PIL import ImageDraw
 import datetime
 import time
 import sqlite3
